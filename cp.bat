@@ -1,6 +1,6 @@
 @echo off
 
-pause >> NULL
+pause
 
 cd Giang
 move *.* ..
