@@ -6,20 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A3K55 Yearbook</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-    <div class="nav_bar" id="nv">
-        <div class="nav_logo" id="nv_lg" onclick="location.href='/'">A3K55 Yearbook</div>
-        <div class="nav_btns" id="nv_bt">
-            <a id="members" href="/members">Members</a>
-            <a id="gallery" href="/gallery">Gallery</a>
-            <a id="about" href="/about">About</a>
+    <div class="nav">
+        <div class="nav_content">
+          <div class="logo">
+            <a href="/">A3K55 Yearbook</a>
+          </div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+            </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a style="--i:1;" class="active" href="/members">Members</a></li>
+            <li><a style="--i:2;" href="/gallery">Gallery</a></li>
+            <li><a style="--i:3;" href="/about">About</a></li>
+          </ul>
         </div>
     </div>
-    </header>
     <section id="slideshow">
         <div class="slideshow_user" data-cycle-prev=".prv" data-cycle-next=".nxt">
             <h1 class="slideshow_username" style="font-size: 3rem;">A3K55 members (demo)</h1>
