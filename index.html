@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A3K55 Yearbook</title>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <body>
-        <div class="nav_bar" id="nv">
-            <div class="nav_logo" id="nv_lg" onclick="location.href='/'">A3K55 Yearbook</div>
-            <div class="nav_btns" id="nv_bt">
-                <a id="members" href="/members">Members</a>
-                <a id="gallery" href="/gallery">Gallery</a>
-                <a id="about" href="/about">About</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3K55 Yearbook</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+    <div class="nav_bar" id="nv">
+        <div class="nav_logo" id="nv_lg" onclick="location.href='/'">A3K55 Yearbook</div>
+        <div class="nav_btns" id="nv_bt">
+            <a id="members" href="/members">Members</a>
+            <a id="gallery" href="/gallery">Gallery</a>
+            <a id="about" href="/about">About</a>
+        </div>
+    </div>
+    </header>
+    <section id="slideshow">
+        <div class="slideshow_user" data-cycle-prev=".prv" data-cycle-next=".nxt">
+            <h1 class="slideshow_username" style="font-size: 3rem;">A3K55 members (demo)</h1>
+            <h2 class="slideshow_userinfo" id="usrin4" style="font-size: 2rem;"></h2>
+            <h3 class="slideshow_userdob" id="usrdob" style="font-size: 1.5rem;"></h3>
+            <div class="slideshow_btns">
+                <button class="prv" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="nxt" onclick="plusSlides(1)">&#10095;</button>
             </div>
         </div>
-        <section id="slideshow">
-            <div class="slideshow_user"
-                data-cycle-prev=".prv"  
-                data-cycle-next=".nxt">
-              <h1 class="slideshow_username" style="font-size: 3rem;">A3K55 members (demo)</h1>
-              <h2 class="slideshow_userinfo" id="usrin4" style="font-size: 2rem;"></h2>
-              <h3 class="slideshow_userdob" id="usrdob" style="font-size: 1.5rem;"></h3>
-              <div class="slideshow_btns">
-                  <button class="prv" onclick="plusSlides(-1)">&#10094;</button>
-                  <button class="nxt" onclick="plusSlides(1)">&#10095;</button>
-              </div>
-            </div>
-            <div class="slideshow_image">
-              <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
-            </div>
-            <div class="slideshow_image">
-                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
-            </div>
-          </section>
-          <script src="script.js"></script>
-    </body>
+        <div class="slideshow_image">
+            <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+        </div>
+        <div class="slideshow_image">
+            <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav_bar");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
 </html>
