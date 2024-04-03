@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A3K55 Yearbook | Gallery</title>
-    </head>
-    <body>
-        <div class="nav_bar" id="nv">
-            <div class="nav_logo" id="nv_lg" onclick="location.href='/'">A3K55 Yearbook</div>
-            <div class="nav_btns" id="nv_bt">
-                <a id="members" href="/members">Members</a>
-                <a id="gallery" href="/gallery">Gallery</a>
-                <a id="about" href="/about">About</a>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3K55 Yearbook | Gallery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_content">
+          <div class="logo">
+            <a href="/">A3K55 Yearbook</a>
+          </div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+            </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a style="--i:1;" class="active" href="/members">Members</a></li>
+            <li><a style="--i:2;" href="/gallery">Gallery</a></li>
+            <li><a style="--i:3;" href="/about">About</a></li>
+          </ul>
         </div>
-        <div style="margin-top: 15px;">gallery page</div>
-    </body>
+    </div>
+    <section class="template_section">
+        <div class="template_section_message">
+            <a> This is the Gallery page. </a>
+        </div>
+    </section>
+</body>
+
 </html>
