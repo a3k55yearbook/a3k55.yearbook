@@ -93,6 +93,12 @@ body {
   justify-content: space-between;
 }
 
+.active {
+  border-top-color: #970b15;
+  border-bottom-color: #970b15;
+  color: #970b15;
+}
+
 .nav .logo a {
   animation: fadeIn 1s;
   font-size: 1.5rem;
@@ -244,4 +250,48 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+}
+
+#toTop{
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../assets/totop.png);
+  color: #fff;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+  mix-blend-mode: difference;
+  border: 2px solid #fff;
+  border-color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s ;
+}
+
+#back-to-top {
+display: none;
+cursor: pointer;
+width: 40px;
+height: 40px;
+overflow: hidden;
+text-align: center;
+border: 1px solid #ddd;
+color: #f18121;
+border-radius: 3px;
+float: left;
+position: fixed;
+right: 10px;
+bottom: 50px;
+z-index: 900;
+line-height: 38px;
+font-size: 20px;
+}
+
+#toTop:active{
+  transform: translateY(10px);
+  box-shadow: none;
 }

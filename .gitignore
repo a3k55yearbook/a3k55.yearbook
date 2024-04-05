@@ -1,2 +1,3 @@
+/.vscode/**
 /assets/pics/**
 !/assets/pics/compress.sh

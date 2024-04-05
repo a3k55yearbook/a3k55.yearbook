@@ -53,8 +53,35 @@
     }
 }
 
+
 html {
     scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+  border-radius: 1px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #868686; 
+  border-radius: 1px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+  background: #000000;
 }
 
 .slideshow {
@@ -116,6 +143,12 @@ img {
     justify-content: space-between;
   }
   
+  .nav ul li.active a {
+    border-top-color: #970b15;
+    border-bottom-color: #970b15;
+    color: #970b15;
+  }
+
   .nav .logo a {
     animation: fadeIn 1s;
     font-size: 1.5rem;
@@ -452,7 +485,8 @@ svg{
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent;
+    background-color: #000;
+    mix-blend-mode: difference;
     border: 2px solid #fff;
     border-color: #fff;
     border-radius: 3px;
