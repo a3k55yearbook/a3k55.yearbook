@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,36 @@
     />
     <link rel="stylesheet" href="styles.css" />
 </head>
+
+<style>
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff; 
+    border-radius: 1px;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #868686; 
+    border-radius: 1px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover 
+  {
+    background: #000000;
+  }
+
+</style>
 
 <body>
     <div class="nav">
@@ -30,23 +60,134 @@
           </ul>
         </div>
     </div>
+
     <section id="slideshow">
-        <div class="slideshow_user" data-cycle-prev=".prv" data-cycle-next=".nxt">
-            <h1 class="slideshow_username" style="font-size: 3rem;">A3K55 members (demo)</h1>
-            <h2 class="slideshow_userinfo" id="usrin4" style="font-size: 2rem;"></h2>
-            <h3 class="slideshow_userdob" id="usrdob" style="font-size: 1.5rem;"></h3>
-            <div class="slideshow_btns">
-                <button class="prv" onclick="plusSlides(-1)">&#10094;</button>
-                <button class="nxt" onclick="plusSlides(1)">&#10095;</button>
+      <div class="slider">
+
+        <!-- list items -->
+        <div class="list">
+            <div class="item active">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+                <div class="content">
+                    <p>A3K55</p>
+                    <h2>Anh 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+                <div class="content">
+                    <p>A3K55</p>
+                    <h2>Anh 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+                <div class="content">
+                    <p>A3K55</p>
+                    <h2>Anh 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+                <div class="content">
+                    <p>A3K55</p>
+                    <h2>Anh 4</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+                <div class="content">
+                    <p>A3K55</p>
+                    <h2>Anh 5</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, neque?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ex.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="slideshow_image">
-            <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
         </div>
-        <div class="slideshow_image">
-            <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+                <div class="content">
+                    01
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+                <div class="content">
+                    02
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+                <div class="content">
+                    03
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+                <div class="content">
+                    04
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+                <div class="content">
+                    05
+                </div>
+            </div>
+          </div>
         </div>
+        <script src="slide.js"></script>
     </section>
+
+    <section id="slideshow">
+      <div class="slideshow_user" data-cycle-prev=".prv" data-cycle-next=".nxt">
+          <h1 class="slideshow_username" style="font-size: 3rem;">A3K55 members (demo)</h1>
+          <h2 class="slideshow_userinfo" id="usrin4" style="font-size: 2rem;"></h2>
+          <h3 class="slideshow_userdob" id="usrdob" style="font-size: 1.5rem;"></h3>
+          <div class="slideshow_btns">
+              <button class="prv" onclick="plusSlides(-1)">&#10094;</button>
+              <button class="nxt" onclick="plusSlides(1)">&#10095;</button>
+          </div>
+      </div>
+      <div class="slideshow_image">
+          <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/cu%20nhan%20lop/H_N08607.jpg">
+      </div>
+      <div class="slideshow_image">
+          <img src="https://raw.githubusercontent.com/a3k55yearbook/src/main/tx%20lop/H_N09276.jpg">
+      </div>
+    </section>
+
+    <!-- button to top -->
+    <button id="toTop"></button>
+
+    <script src="totop.js"></script>
     <script src="script.js"></script>
 </body>
 
