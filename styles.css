@@ -321,7 +321,7 @@ svg{
   left: 0;
   bottom: 0;
   background-image: linear-gradient(
-      to top, #000 40%, transparent
+      to top, #000 10%, transparent
   );
 }
 
