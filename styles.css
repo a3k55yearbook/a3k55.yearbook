@@ -305,14 +305,15 @@ svg{
   overflow: hidden;
   opacity: 0;
   transition: .5s;
+  margin-left: 15%;
 }
 
 .slider .list .item img{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
 }
-
+/*
 .slider .list .item::after{
   content: '';
   width: 100%;
@@ -323,7 +324,7 @@ svg{
   background-image: linear-gradient(
       to top, #000 10%, transparent
   );
-}
+}*/
 
 .slider .list .item .content{
   position: absolute;
@@ -400,7 +401,7 @@ svg{
 
 .thumbnail{
   position: absolute;
-  bottom: 50px;
+  bottom: -50px;
   z-index: 11;
   display: flex;
   gap: 10px;
@@ -410,6 +411,14 @@ svg{
   box-sizing: border-box;
   overflow: auto;
   justify-content: center;
+  transition: 1.5s;
+}
+
+.thumbnail{
+  opacity: 0.3;
+}
+.thumbnail:hover{
+  opacity: 1.0;
 }
 
 .thumbnail::-webkit-scrollbar{
