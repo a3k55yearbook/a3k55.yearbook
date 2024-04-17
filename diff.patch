@@ -1,0 +1,221 @@
+diff --git a/about/index.html b/about/index.html
+index d755fc5..2736cae 100644
+--- a/about/index.html
++++ b/about/index.html
+@@ -36,9 +36,9 @@
+         </div>
+     </div>
+ 
+-    <section class="template_section">
+-        <div class="template_section_message">
+-            <a> HUGE THANKS TO THESE CONTRIBUTORS: </a>
++    <section class="about_section">
++        <div class="about_section_message">
++            HUGE THANKS TO THESE CONTRIBUTORS:
+         </div>
+     </section>
+ 
+@@ -53,7 +53,7 @@
+                   <button class="fb"><a href="https://www.facebook.com/speedbreaker2024">See More</a></button>
+               </div>
+           </div>
+-          <div class="item" style="background-image: url();">
++              <div class="item" style="background-image: url();">
+               <div class="content">
+                   <div class="name">Trương Ái Linh</div>
+                   <div class="des">27/07/2006</div>
+diff --git a/about/styles.css b/about/styles.css
+index f56d79e..1cb36a0 100644
+--- a/about/styles.css
++++ b/about/styles.css
+@@ -49,6 +49,7 @@
+ }
+ 
+ :root {
++  --font-common: BlinkMacSystemFont, "Inter", sans-serif;
+   --primary-color: #ffffff;
+   --primary-color-dark: #ffffff;
+   --text-dark: #1f2937;
+@@ -72,7 +73,7 @@ a {
+ }
+ 
+ body {
+-  font-family: "Inter", sans-serif;
++  font-family: var(--font-common);
+   background: #eaeaea;
+ }
+ 
+@@ -151,21 +152,20 @@ ul li a:hover {
+   color: #ffffff
+ }
+ 
+-.template_section {
++.about_section {
+     margin-top: 50px;
+ }
+ 
+-.template_section_message {
++.about_section_message {
+   min-height: 100vh;
+   max-width: var(--max-width);
+   margin: auto;
+   padding: 1rem;
+-  display: grid;
+-  grid-template-columns: repeat(2, 1fr);
++  display: flex;
+   gap: 4rem;
+ }
+ 
+-.template_section_message {
++.about_section_message {
+   display: flex;
+   justify-content: center;
+ }
+@@ -203,7 +203,7 @@ ul li a:hover {
+     font-size: 1.25rem;
+   }
+ 
+-  .template_section_message {
++  .about_section_message {
+     padding: 10rem 1rem 5rem 1rem;
+     text-align: center;
+     grid-template-columns: repeat(1, 1fr);
+@@ -242,7 +242,7 @@ ul li a:hover {
+     font-size: 1.25rem;
+   }
+ 
+-  .template_section_message {
++  .about_section_message {
+     padding: 10rem 1rem 5rem 1rem;
+     text-align: center;
+     grid-template-columns: repeat(1, 1fr);
+@@ -300,7 +300,7 @@ font-size: 20px;
+   /* slider */
+ 
+ .container{
+-
++  font-family: var(--font-common);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+@@ -309,10 +309,19 @@ font-size: 20px;
+   height: 600px;
+   background: #faf9f9;
+   box-shadow: 0 30px 50px #dbdbdb;
++  margin-top: 25px;
+ }
+ 
+-.container .slide .item{
++.container {
++  border-radius: 20px;
++  background-color: transparent;
++}
++
++.container * {
++  font-family: var(--font-common);
++}
+ 
++.container .slide .item{
+   width: 200px;
+   height: 300px;
+   position: absolute;
+@@ -328,11 +337,10 @@ font-size: 20px;
+ 
+ .slide .item:nth-child(1),
+ .slide .item:nth-child(2){
+-
+   top: 0;
+   left: 0;
+   transform: translate(0, 0);
+-  border-radius: 0;
++  border-radius: 20px;
+   width: 100%;
+   height: 100%;
+ }
+@@ -351,6 +359,7 @@ font-size: 20px;
+ 
+ 
+ .item .content{
++  
+   position: absolute;
+   top: 50%;
+   left: 100px;
+@@ -389,6 +398,7 @@ font-size: 20px;
+   border: 2px solid #fff;
+   background-color: #fff;
+   transition: .5s;
++  border-radius: 3px;
+ }
+ .content .fb a{
+   text-decoration: none;
+diff --git a/gallery/styles.css b/gallery/styles.css
+index 9f46f75..73c7b6f 100644
+--- a/gallery/styles.css
++++ b/gallery/styles.css
+@@ -49,6 +49,7 @@
+ }
+ 
+ :root {
++  --font-common: BlinkMacSystemFont, "Inter", sans-serif;
+   --primary-color: #ffffff;
+   --primary-color-dark: #ffffff;
+   --text-dark: #1f2937;
+@@ -72,7 +73,7 @@ a {
+ }
+ 
+ body {
+-  font-family: "Inter", sans-serif;
++  font-family: var(--font-common);
+ }
+ 
+ .nav {
+diff --git a/members/styles.css b/members/styles.css
+index 9f46f75..73c7b6f 100644
+--- a/members/styles.css
++++ b/members/styles.css
+@@ -49,6 +49,7 @@
+ }
+ 
+ :root {
++  --font-common: BlinkMacSystemFont, "Inter", sans-serif;
+   --primary-color: #ffffff;
+   --primary-color-dark: #ffffff;
+   --text-dark: #1f2937;
+@@ -72,7 +73,7 @@ a {
+ }
+ 
+ body {
+-  font-family: "Inter", sans-serif;
++  font-family: var(--font-common);
+ }
+ 
+ .nav {
+diff --git a/styles.css b/styles.css
+index e20728b..cfde687 100644
+--- a/styles.css
++++ b/styles.css
+@@ -4,7 +4,6 @@
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+-    font-family: 'Poppins', sans-serif;
+ }
+ 
+ @keyframes slideTop {
+@@ -110,6 +109,7 @@ img {
+ }
+ 
+ :root {
++    --font-common: BlinkMacSystemFont, "Inter", sans-serif;
+     --primary-color: #ffffff;
+     --primary-color-dark: #ffffff;
+     --text-dark: #1f2937;
+@@ -133,7 +133,7 @@ img {
+   }
+   
+   body {
+-    font-family: "Inter", sans-serif;
++    font-family: var(--font-common);
+   }
+   
+   .nav {
