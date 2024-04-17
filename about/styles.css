@@ -350,14 +350,13 @@ font-size: 20px;
 }
 
 
-
 .item .content{
   position: absolute;
   top: 50%;
   left: 100px;
   width: 300px;
   text-align: left;
-  color: #eee;
+  color: #fff;
   transform: translate(0, -50%);
   font-family: system-ui;
   display: none;
@@ -371,9 +370,10 @@ font-size: 20px;
 
 .content .name{
   font-size: 40px;
-  color: #7718ad;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  filter: drop-shadow(0 0 0.5rem #000);
   opacity: 0;
   animation: animate 1s ease-in-out 1 forwards;
 }
@@ -381,12 +381,27 @@ font-size: 20px;
 .content .des{
   margin-top: 10px;
   margin-bottom: 20px;
-  color:#000;
+  color:#ffffff;
   opacity: 0;
   animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
+.content .fb{
+  border: 2px solid #fff;
+  background-color: #fff;
+  transition: .5s;
+}
 .content .fb a{
   text-decoration: none;
+  color: #000;
+}
+
+.content .fb:hover{
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
 }
 .content button{
   padding: 10px 20px;
