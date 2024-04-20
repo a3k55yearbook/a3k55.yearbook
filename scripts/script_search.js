@@ -32,3 +32,9 @@ searchBar.addEventListener('keyup', function() {
   displaySuggestions(filteredSuggestions);
 });
 
+document.addEventListener('click', function(e) {
+  if (!e.target.classList.contains('search-bar') && !e.target.classList.contains('suggestions')) {
+    suggestionsList.style.display = "none";
+  }
+});
+
