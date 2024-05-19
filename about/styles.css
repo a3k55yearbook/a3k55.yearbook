@@ -74,7 +74,7 @@ a {
 
 body {
   font-family: var(--font-common);
-  background: #eaeaea;
+  background: #000;
 }
 
 .nav {
@@ -163,6 +163,7 @@ ul li a:hover {
   padding: 1rem;
   display: flex;
   gap: 4rem;
+  color: white;
 }
 
 .about_section_message {
@@ -328,7 +329,7 @@ font-size: 20px;
   top: 50%;
   transform: translate(0, -50%);
   border-radius: 20px;
-  box-shadow: 0 30px 50px #a39a9a;
+  box-shadow: 0 30px 50px #000;
   background-position: 35% 35%;
   background-size: cover;
   display: inline-block;
