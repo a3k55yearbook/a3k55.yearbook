@@ -1,0 +1,13 @@
+[
+    {
+        "id": "1",
+        "name": "Nguyen Le Phuoc Duy",
+        "gender": true
+    },
+    
+    {
+        "id": "2",
+        "name": "Truong Ai Linh",
+        "gender": false
+    }
+]
