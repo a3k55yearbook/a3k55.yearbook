@@ -74,7 +74,7 @@ a {
 
 body {
   font-family: var(--font-common);
-  background-color: grey;
+  background-color: #000;
 }
 
 .nav {
