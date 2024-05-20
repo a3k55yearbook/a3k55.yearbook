@@ -158,48 +158,64 @@ html {
 
   /* search box */
 
-  .nav .search-container {
+  form{
     position: relative;
-    display: flex;
-  }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .5s;
+    width: 50px;
+    background: transparent;  
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 2px solid white;
+    padding: 5px;
+}
 
-  .nav .search-bar {
-    display: flex;
-    height: 30px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #000;
-    overflow: hidden;
-    resize: none;
-    justify-content: center;
-    color: #fff;
-  }
-
-  .nav .suggestions {
+input{
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
-    color: #fff;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    border-top: none;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
     display: none;
-    border-radius: 10px;
-  }
+    font-size: 1em;
+    border-radius: 2px;
+    padding: 0 20px;
+    background: transparent;
+    color: #fff;
+}
 
-  .suggestions li {
+.fa{
+    box-sizing: border-box;
     padding: 10px;
-    cursor: pointer;
-  }
+    width: 42.5px;
+    position: absolute;
+    top: 3px;
+    right: 1.5px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all .5s;
+}
 
-  .suggestions li:hover {
-    background-color: #3d3d3d;
-  }
-  
+form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .fa{
+    background: #000;
+    color: white;
+}
+
   
   .nav .checkbox {
     display: none;
