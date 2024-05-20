@@ -398,12 +398,14 @@ form:hover .fa{
     transform: translate(210%);
   }
   .buttons{
+      z-index: 2000;
       position: absolute;
       bottom:30px;
       left:0;
       text-align: center;
       width:100%;
   }.buttons button{
+      opacity: 0.2;
       width:50px;
       height:50px;
       border-radius: 50%;
@@ -412,6 +414,7 @@ form:hover .fa{
   }
   .buttons button:hover{
       background-color: #bac383;
+      opacity: 1;
   }
 
 @media screen and (max-width: 678px) {
