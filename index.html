@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -22,10 +23,6 @@
           <div class="logo">
             <a href="/">A3K55 Yearbook</a>
           </div>
-          <div class="search-container">
-            <textarea type="text" class="search-bar" placeholder="Search..."></textarea>
-            <ul class="suggestions" id="search-sg"></ul>
-          </div>
           <label for="check" class="checkbox">
             <i class="ri-menu-line"></i>
             </label>
@@ -35,6 +32,12 @@
             <li><a style="--i:2;" href="/members/">Members</a></li>
             <li><a style="--i:3;" href="/gallery/">Gallery</a></li>
             <li><a style="--i:4;" href="/about/">About</a></li>
+            <li>
+                <form style="--i:5;" action="">
+                  <input type="search" placeholder="Search...">
+                  <i class="fa fa-search"></i>
+                </form>
+            </li>
           </ul>
         </div>
     </div>
@@ -55,11 +58,17 @@
             <div class="item" style="background-image: url('https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/txvinpearl/H_N09742_compressed.jpg');"></div>
         </div> 
         <div class="buttons">
-            <button id="prev"><</button>
-            <button id="next">></button>
+            <button id="prev"></button>
+            <button id="next"></button>
         </div>
+
+        <span class="footer"></span>
+        <p class="end-footer">2024 © A3K55 - THPT CHUYEN DAI HOC VINH</p>
+
         <script src="scripts/script_slide.js"></script>
     </section>
+
+    
 
     <button id="toTop"></button>
 
