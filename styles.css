@@ -172,19 +172,22 @@ html {
     color: #6b7280;
   }
 
+
+
   /* search box */
 
   form{
     position: relative;
     top: 50%;
     left: 50%;
+    margin-top: 15%;
     transform: translate(-50%,-50%);
     transition: all .5s;
     width: 50px;
+    height: 50px;
     background: transparent;  
     box-sizing: border-box;
-    border-radius: 3px;
-    padding: 5px;
+    border: hidden;
 }
 
 input{
@@ -192,7 +195,7 @@ input{
     top: 0;
     left: 0;
     width: 100%;
-    line-height: 30px;
+    line-height: 50px;
     outline: 0;
     border: 0;
     display: none;
@@ -205,6 +208,7 @@ input{
 
 .fa{
     box-sizing: border-box;
+    margin-top: 50%;
     padding: 10px;
     width: 42.5px;
     position: absolute;
@@ -220,6 +224,8 @@ input{
 form:hover{
     width: 300px;
     cursor: pointer;
+    border: 3px solid white;
+    margin-top: 15%;
 }
 
 form:hover input{
@@ -229,6 +235,7 @@ form:hover input{
 form:hover .fa{
     background: #000;
     color: white;
+    margin-top: 0;
 }
 
   
