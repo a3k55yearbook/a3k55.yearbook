@@ -68,6 +68,36 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+  border-radius: 1px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #868686; 
+  border-radius: 1px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{
+  background: #000000;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -179,7 +209,7 @@ ul li a:hover {
   }
 
   .section {
-    background: linear-gradient(to top, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73)),url('assets/back.jpg') center center no-repeat;
+    background: linear-gradient(to top, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73)),url('assets/back.webp') center center no-repeat;
     background-size: cover;
   }
 
@@ -334,34 +364,34 @@ font-size: 20px;
   transition-delay: 0.1s;
 }
 .img-boxg1:nth-child(2){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/namanh.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/namanh.webp");
 }
 .img-boxg1:nth-child(3){
   background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
 }
 .img-boxg1:nth-child(4){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/thaichien.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/thaichien.webp");
 }
 .img-boxg1:nth-child(5){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/vietchien.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vietchien.webp");
 }
 .img-boxg1:nth-child(6){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/vandung.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vandung.webp");
 }
 .img-boxg1:nth-child(7){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/phduy.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/phduy.webp");
 }
 .img-boxg1:nth-child(8){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/anhduc.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhduc.webp");
 }
 .img-boxg1:nth-child(9){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/nhathieu.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhathieu.webp");
 }
 .img-boxg1:nth-child(10){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/quanghieu.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quanghieu.webp");
 }
 .img-boxg1:nth-child(11){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/xuanhung.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/xuanhung.webp");
 }
  
 .img-boxg1 h3{
@@ -412,37 +442,37 @@ font-size: 20px;
   transition-delay: 0.1s;
 }
 .img-boxg2:nth-child(1){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/thanhhuy.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/thanhhuy.webp");
 }
 .img-boxg2:nth-child(2){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/tuanhung.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tuanhung.webp");
 }
 .img-boxg2:nth-child(3){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/duyhung.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/duyhung.webp");
 }
 .img-boxg2:nth-child(4){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/tienhung.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tienhung.webp");
 }
 .img-boxg2:nth-child(5){
   background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
 }
 .img-boxg2:nth-child(6){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/minhkhiet.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhkhiet.webp");
 }
 .img-boxg2:nth-child(7){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/chikien.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/chikien.webp");
 }
 .img-boxg2:nth-child(8){
   background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
 }
 .img-boxg2:nth-child(9){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/khanhky.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/khanhky.webp");
 }
 .img-boxg2:nth-child(10){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/ailinh.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ailinh.webp");
 }
 .img-boxg2:nth-child(11){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/hienlong.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hienlong.webp");
 }
  
 .img-boxg2 h3{
@@ -480,37 +510,37 @@ font-size: 20px;
   transition-delay: 0.1s;
 }
 .img-boxg3:nth-child(2){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/duymanh.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/duymanh.webp");
 }
 .img-boxg3:nth-child(3){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/ducmanh.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ducmanh.webp");
 }
 .img-boxg3:nth-child(4){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/vomanh.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vomanh.webp");
 }
 .img-boxg3:nth-child(5){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/quangminh.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quangminh.webp");
 }
 .img-boxg3:nth-child(6){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/vannam.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vannam.webp");
 }
 .img-boxg3:nth-child(7){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/nguyenngoc.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nguyenngoc.webp");
 }
 .img-boxg3:nth-child(8){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/nhan.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhan.webp");
 }
 .img-boxg3:nth-child(9){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/syphat.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/syphat.webp");
 }
 .img-boxg3:nth-child(10){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/ngocphu.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ngocphu.webp");
 }
 .img-boxg3:nth-child(11){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/hongphuc.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hongphuc.webp");
 }
 .img-boxg3:nth-child(12){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/dinhphuoc.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/dinhphuoc.webp");
 }
  
 .img-boxg3 h3{
@@ -549,34 +579,34 @@ font-size: 20px;
   transition-delay: 0.1s;
 }
 .img-boxg4:nth-child(1){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/tienphuoc.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tienphuoc.webp");
 }
 .img-boxg4:nth-child(2){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/minhquan.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhquan.webp");
 }
 .img-boxg4:nth-child(3){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/trinhthang.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/trinhthang.webp");
 }
 .img-boxg4:nth-child(4){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/hoangtien.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hoangtien.webp");
 }
 .img-boxg4:nth-child(5){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/huyentrang.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/huyentrang.webp");
 }
 .img-boxg4:nth-child(6){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/minhtri.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhtri.webp");
 }
 .img-boxg4:nth-child(7){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/phutrong.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/phutrong.webp");
 }
 .img-boxg4:nth-child(8){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/ductruyen.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ductruyen.webp");
 }
 .img-boxg4:nth-child(9){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/quoctruong.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quoctruong.webp");
 }
 .img-boxg4:nth-child(10){
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails/anhtu.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhtu.webp");
 }
  
 .img-boxg4 h3{
