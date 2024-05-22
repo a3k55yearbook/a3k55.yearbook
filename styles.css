@@ -208,10 +208,10 @@ input{
 
 .fa{
     box-sizing: border-box;
-    padding: 10px;
+    padding-top: 15px;
     width: 42.5px;
     position: absolute;
-    top: 3px;
+    margin-top: 0;
     right: 1.5px;
     border-radius: 3px;
     color: #fff;
@@ -233,7 +233,6 @@ form:hover input{
 form:hover .fa{
     background: #000;
     color: white;
-    margin-top: 0;
 }
 
   
