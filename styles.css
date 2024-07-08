@@ -421,7 +421,15 @@ form:hover .fa{
   }
 
 @media screen and (max-width: 678px) {
-  
+  .item {
+    width: 50%;
+  }
+  .item:nth-child(1) .item:nth-child(2) .item:nth-child(4) .item:nth-child(n+5){
+    height: 55vh;
+  }
+  .item:nth-child(3){
+    height: 60vh;
+  }
 }
 
 /* css slider */
