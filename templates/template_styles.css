@@ -75,6 +75,18 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.footer {
+  background-color: #000;
+  text-align: center;
+}
+
+.end-footer {
+  font-size: 13px;
+  color: rgba(255, 255, 255, .6);
+  background-color: #000;
+  text-align: center;
+}
+
 .nav {
   width: 100%;
   position: relative;
