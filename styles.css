@@ -489,25 +489,9 @@ form:hover .fa{
   align-items: center;
   justify-content: center;
   background-color: #363636;
-  object-fit: contain;
+  overflow-y: hidden;
 }
 
-.special-event-m {
-  display: none;
-}
-
-@media screen and (max-width: 678px) {
-  .special-event {
-    display: none;
-  }
-  .special-event-m {
-    opacity: 1;
-      height: 200;
-      width: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #363636;
-      object-fit: contain;
-  }
+.special-event img {
+  max-width: 85%;
 }
