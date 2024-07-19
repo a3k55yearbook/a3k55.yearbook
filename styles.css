@@ -482,3 +482,32 @@ form:hover .fa{
   /* click to top css */
 
 
+.special-event {
+  height: 400;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #363636;
+  object-fit: contain;
+}
+
+.special-event-m {
+  display: none;
+}
+
+@media screen and (max-width: 678px) {
+  .special-event {
+    display: none;
+  }
+  .special-event-m {
+    opacity: 1;
+      height: 200;
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #363636;
+      object-fit: contain;
+  }
+}
