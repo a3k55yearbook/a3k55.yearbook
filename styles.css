@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
     margin: 0;
@@ -99,14 +100,6 @@ html {
   background: #000000;
 }
 
-.slideshow2 {      
-  background: linear-gradient(to top, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73));
-  justify-content: center;
-}
-
-#slideshow {
-  background: black;
-}
 
 :root {
     --font-common: BlinkMacSystemFont, "Inter", sans-serif;
@@ -133,6 +126,7 @@ html {
   }
   
   body {
+    background-color: #000;
     font-family: var(--font-common);
   }
   
@@ -142,7 +136,7 @@ html {
     top: 0;
     left: 0;
     background-color: #000000;
-    z-index: 1030;
+    z-index: 999;
   }
   
   .nav_content {
@@ -284,11 +278,6 @@ form:hover .fa{
       display: block;
     }
   
-    .slideshow2 {
-      background: linear-gradient(to top, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73)),url('assets/back.jpg') center center no-repeat;
-      background-size: cover;
-    }
-  
     ul {
       position: absolute;
       width: 100%;
@@ -347,60 +336,8 @@ form:hover .fa{
     }
   }
   
-  /* css slider */
-
-  #slide {
-    padding: 50px;
-    display: flex;
-    transition: .7s;
-    height: 100vh;
-    margin-top: -50px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .item{
-    width: 60%;
-    object-fit: cover;
-    overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    transition: 1s;
-    position: absolute;
-    z-index: 1829;
-    background-position: center;
-    border-radius: 15px;
-  }
-  .item:nth-child(1){
-    opacity: 0.5;
-    height: 70vh;
-    transform: translate(-130%);
-  }
-  .item:nth-child(2){
-    opacity: 0.5;
-    height: 70vh;
-    transform: translate(-63%);
-  }
-  .item:nth-child(3){
-    z-index: 2000;
-    height: 75vh;
-    transform: translate(30%);
-  }
-  .item:nth-child(4){
-    opacity: 0.5;
-    height: 70vh;
-    transform: translate(123%);
-  }
-  .item:nth-child(n+5){
-    height: 70vh;
-    transform: translate(210%);
-  }
   .buttons{
-      z-index: 2000;
+      z-index: 999;
       position: absolute;
       bottom:30px;
       left:0;
@@ -420,20 +357,9 @@ form:hover .fa{
   }
 
 @media screen and (max-width: 678px) {
-  .item {
-    width: 50%;
-  }
-  .item:nth-child(1) .item:nth-child(2) .item:nth-child(4) .item:nth-child(n+5){
-    height: 55vh;
-  }
-  .item:nth-child(3){
-    height: 60vh;
-  }
+
 }
 
-/* css slider */
-
-  /* click to top css */
 
 #toTop{
     position: fixed;
@@ -469,7 +395,7 @@ form:hover .fa{
   position: fixed;
   right: 10px;
   bottom: 50px;
-  z-index: 900;
+  z-index: 999;
   line-height: 38px;
   font-size: 20px;
 }
@@ -479,19 +405,68 @@ form:hover .fa{
     box-shadow: none;
 }
 
-  /* click to top css */
+/* click to top css */
 
+/*
+    entirely rebased slider.
+*/
 
-.special-event {
-  height: 400;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #363636;
-  overflow-y: hidden;
+.gradient {
+  background: linear-gradient(to bottom, transparent, black, 25%);
 }
 
-.special-event img {
-  max-width: 85%;
+#slider {
+  background-color: #000;
+}
+
+#container {
+  display: flex;
+  background-color: #fff;
+  padding: 1.5erem 1rem;
+  margin: 50px auto 50px auto;
+  box-sizing: border-box;
+  border: #970b15;
+  aspect-ratio: 16/9;
+  max-width: 80%;
+  height: 750px;
+  justify-content: center;
+  position: relative;
+}
+
+#container img {
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 25% 25%;
+  width: 100%;
+  filter: brightness(100%);
+  height: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+}
+
+#container #content {
+  position:absolute;
+  bottom: 8.5%;
+  left: 5%;
+  width: 95%;
+  text-align: left;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+#container #desc {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#container button {
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
 }
