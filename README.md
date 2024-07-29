@@ -1,6 +1,3 @@
-![](/assets/banner.png)
-
-
 # A3K55 Yearbook
 
 You are viewing A3K55 Yearbook's source code.
