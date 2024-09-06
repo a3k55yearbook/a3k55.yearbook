@@ -2,7 +2,7 @@
 
 You are viewing A3K55 Yearbook's source code.
 
-We are announcing the beta phase of the website development! Futher adjustments are going to be finalized before the official release (expected August 2024).
+We are announcing the beta phase of the website development! Futher adjustments are going to be finalized before the official release (expected never).
 
 # A3K55 Yearbook X Vinh University
 
@@ -19,3 +19,5 @@ I'm announcing Bootstrap integration, which will further optimize for mobile pla
 The Github Pages hosted website now should deploy directly from `main`, which means `dev` is no longer needed and will be merged before its removal. This will be the canary release.
 
 The Vinh University hosted website will sync and deploy from this repository at my request. This will be the stable release.
+
+Update: This project is in frozen state. Development is halted indefinitely.
