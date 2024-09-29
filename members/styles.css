@@ -130,15 +130,27 @@ body {
   color: #970b15;
 }
 
+.nav .logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav .logo a {
   animation: fadeIn 1s;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   transition: 0.3s;
 }
-.nav .logo a:hover {
+
+.nav .logo img {
+  vertical-align: middle;
+}
+
+.nav .logo a:hover{
   color: #6b7280;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .nav .checkbox {
@@ -454,7 +466,7 @@ font-size: 20px;
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tienhung.webp");
 }
 .img-boxg2:nth-child(5){
-  background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/per/KIIN4559_compressed.jpg");
 }
 .img-boxg2:nth-child(6){
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhkhiet.webp");

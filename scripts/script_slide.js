@@ -1,4 +1,7 @@
-document.getElementById('next').onclick = function(){
+// 30/09/2024: rest this code until further development.
+
+/*
+ document.getElementById('next').onclick = function(){
     let lists = document.querySelectorAll('.item');
     document.getElementById('slide').appendChild(lists[0]);
  }
@@ -6,4 +9,5 @@ document.getElementById('next').onclick = function(){
     let lists = document.querySelectorAll('.item');
     document.getElementById('slide').prepend(lists[lists.length - 1]);
  }
-   
+
+*/

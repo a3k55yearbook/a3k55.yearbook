@@ -154,18 +154,28 @@ html {
     color: #970b15;
   }
 
+  .nav .logo {
+    display: flex;
+    align-items: center;
+  }
+  
   .nav .logo a {
     animation: fadeIn 1s;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #ffffff;
     transition: 0.3s;
   }
-  .nav .logo a:hover {
-    color: #6b7280;
+  
+  .nav .logo img {
+    vertical-align: middle;
   }
-
-
+  
+  .nav .logo a:hover{
+    color: #6b7280;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
 
   /* search box */
 
@@ -420,12 +430,13 @@ form:hover .fa{
 }
 
 #container {
+  background: none;
   display: flex;
-  background-color: #fff;
-  padding: 1.5erem 1rem;
+  padding: 1.5 1rem;
   margin: 50px auto 50px auto;
   box-sizing: border-box;
-  border: #970b15;
+  border-radius: 10px;
+  box-shadow: 0 0 0.4em 0.4em rgb(40, 40, 40);
   aspect-ratio: 16/9;
   max-width: 80%;
   height: 750px;
@@ -434,6 +445,7 @@ form:hover .fa{
 }
 
 #container img {
+  border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
   object-position: 25% 25%;

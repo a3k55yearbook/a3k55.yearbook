@@ -100,15 +100,27 @@ body {
   color: #970b15;
 }
 
+.nav .logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav .logo a {
   animation: fadeIn 1s;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   transition: 0.3s;
 }
-.nav .logo a:hover {
+
+.nav .logo img {
+  vertical-align: middle;
+}
+
+.nav .logo a:hover{
   color: #6b7280;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .nav .checkbox {
