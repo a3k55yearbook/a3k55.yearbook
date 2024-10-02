@@ -181,7 +181,7 @@ ul li a:hover {
   justify-content: left;
 }
 
-img {
+.template_section_message img {
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
