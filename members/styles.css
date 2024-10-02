@@ -4,48 +4,56 @@
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 200% 0;
   }
 }
+
 @keyframes slideTop {
   0% {
-      opacity: 0;
-      transform: translateY(80px);
+    opacity: 0;
+    transform: translateY(80px);
   }
 
   100% {
-      opacity: 100%;
-      transform: translateY(0);
+    opacity: 100%;
+    transform: translateY(0);
   }
 }
 
 @keyframes slideRight {
   0% {
-      opacity: 0;
-      transform: translateX(-80px);
+    opacity: 0;
+    transform: translateX(-80px);
   }
 
   100% {
-      opacity: 100%;
-      transform: translateX(0);
+    opacity: 100%;
+    transform: translateX(0);
   }
 }
 
 @keyframes slideLeft {
   0% {
-      opacity: 0;
-      transform: translateX(80px);
+    opacity: 0;
+    transform: translateX(80px);
   }
 
   100% {
-      opacity: 100%;
-      transform: translateX(0);
+    opacity: 100%;
+    transform: translateX(0);
   }
 }
+
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 :root {
@@ -56,6 +64,11 @@
   --text-light: #6b7280;
   --extra-light: #faf5ff;
   --max-width: 1200px;
+}
+
+.is-mainline-dev {
+  color: rgb(214, 83, 226) !important;
+  font-weight: 600;
 }
 
 * {
@@ -71,6 +84,7 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -79,21 +93,20 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #fff;
   border-radius: 1px;
 
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #868686; 
+  background: #868686;
   border-radius: 1px;
 
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover 
-{
+::-webkit-scrollbar-thumb:hover {
   background: #000000;
 }
 
@@ -147,7 +160,7 @@ body {
   vertical-align: middle;
 }
 
-.nav .logo a:hover{
+.nav .logo a:hover {
   color: #6b7280;
   opacity: 0.6;
   transition: 0.3s;
@@ -160,6 +173,7 @@ body {
 .nav input {
   display: none;
 }
+
 .nav .checkbox i {
   font-size: 2rem;
   color: var(--primary-color);
@@ -176,7 +190,7 @@ ul {
 }
 
 ul li a {
-  opacity: 0; 
+  opacity: 0;
   animation: slideTop .5s ease forwards;
   animation-delay: calc(.2s * var(--i));
   padding: 0.5rem 1rem;
@@ -194,7 +208,7 @@ ul li a:hover {
 }
 
 .template_section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .template_section_message {
@@ -221,7 +235,7 @@ ul li a:hover {
   }
 
   .section {
-    background: linear-gradient(to top, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73)),url('assets/back.webp') center center no-repeat;
+    background: linear-gradient(to top, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73)), url('assets/back.webp') center center no-repeat;
     background-size: cover;
   }
 
@@ -237,7 +251,7 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  .nav #check:checked ~ ul {
+  .nav #check:checked~ul {
     left: 0;
   }
 
@@ -254,7 +268,7 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
-  
+
 }
 
 @media (height < 431px) {
@@ -276,7 +290,7 @@ ul li a:hover {
     gap: 3rem;
   }
 
-  .nav #check:checked ~ ul {
+  .nav #check:checked~ul {
     left: 0;
   }
 
@@ -295,7 +309,7 @@ ul li a:hover {
   }
 }
 
-#toTop{
+#toTop {
   position: fixed;
   bottom: 20px;
   right: 15px;
@@ -312,35 +326,35 @@ ul li a:hover {
   border-color: #fff;
   border-radius: 3px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s ;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #back-to-top {
-display: none;
-cursor: pointer;
-width: 40px;
-height: 40px;
-overflow: hidden;
-text-align: center;
-border: 1px solid #ddd;
-color: #f18121;
-border-radius: 3px;
-float: left;
-position: fixed;
-right: 10px;
-bottom: 50px;
-z-index: 900;
-line-height: 38px;
-font-size: 20px;
+  display: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: #f18121;
+  border-radius: 3px;
+  float: left;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 900;
+  line-height: 38px;
+  font-size: 20px;
 }
 
-#toTop:active{
+#toTop:active {
   transform: translateY(10px);
   box-shadow: none;
 }
 
 /* _by Nứng_*/
-.container1{
+.container1 {
   width: 100%;
   height: 70vh;
   background: #000000;
@@ -349,7 +363,7 @@ font-size: 20px;
   justify-content: left;
 }
 
-.container2{
+.container2 {
   width: 100%;
   height: 70vh;
   background: #000000;
@@ -358,13 +372,14 @@ font-size: 20px;
   justify-content: right;
 }
 
-.gallery{
+.gallery {
   display: inline-flex;
   align-items: center;
   justify-content: left;
 }
+
 /* Tổ 1 */
-.img-boxg1{
+.img-boxg1 {
   width: 4.5vw;
   height: 50vh;
   margin: 10px;
@@ -375,65 +390,76 @@ font-size: 20px;
   transition: width 0.5s;
   transition-delay: 0.1s;
 }
-.img-boxg1:nth-child(2){
+
+.img-boxg1:nth-child(2) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/namanh.webp");
 }
-.img-boxg1:nth-child(3){
+
+.img-boxg1:nth-child(3) {
   background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
 }
-.img-boxg1:nth-child(4){
+
+.img-boxg1:nth-child(4) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/thaichien.webp");
 }
-.img-boxg1:nth-child(5){
+
+.img-boxg1:nth-child(5) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vietchien.webp");
 }
-.img-boxg1:nth-child(6){
+
+.img-boxg1:nth-child(6) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vandung.webp");
 }
-.img-boxg1:nth-child(7){
+
+.img-boxg1:nth-child(7) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/phduy.webp");
 }
-.img-boxg1:nth-child(8){
+
+.img-boxg1:nth-child(8) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhduc.webp");
 }
-.img-boxg1:nth-child(9){
+
+.img-boxg1:nth-child(9) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhathieu.webp");
 }
-.img-boxg1:nth-child(10){
+
+.img-boxg1:nth-child(10) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quanghieu.webp");
 }
-.img-boxg1:nth-child(11){
+
+.img-boxg1:nth-child(11) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/xuanhung.webp");
 }
- 
-.img-boxg1 h3{
+
+.img-boxg1 h3 {
   color: #fff;
   position: absolute;
   bottom: 0;
   left: 30px;
   opacity: 0;
-  transition: bottom 0.5s , opacity 0.5s;
+  transition: bottom 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
 }
 
-.img-boxg1:hover{
+.img-boxg1:hover {
   width: 30vw;
   cursor: pointer;
 }
 
-.img-boxg1:hover h3{
+.img-boxg1:hover h3 {
   opacity: 1;
   bottom: 25px;
   cursor: pointer;
 }
 
- .container1 .group-name{
+.container1 .group-name {
   width: 5vh;
   color: white;
   padding-right: 3vw;
   padding-left: 1vw;
 }
-  .container2 .group-name{
+
+.container2 .group-name {
   width: 5vh;
   color: white;
   padding-left: 2vw;
@@ -442,7 +468,7 @@ font-size: 20px;
 
 
 /* Tổ 2 */
-.img-boxg2{
+.img-boxg2 {
   width: 4.5vw;
   height: 50vh;
   margin: 10px;
@@ -453,64 +479,75 @@ font-size: 20px;
   transition: width 0.5s;
   transition-delay: 0.1s;
 }
-.img-boxg2:nth-child(1){
+
+.img-boxg2:nth-child(1) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/thanhhuy.webp");
 }
-.img-boxg2:nth-child(2){
+
+.img-boxg2:nth-child(2) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tuanhung.webp");
 }
-.img-boxg2:nth-child(3){
+
+.img-boxg2:nth-child(3) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/duyhung.webp");
 }
-.img-boxg2:nth-child(4){
+
+.img-boxg2:nth-child(4) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tienhung.webp");
 }
-.img-boxg2:nth-child(5){
+
+.img-boxg2:nth-child(5) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/per/KIIN4559_compressed.jpg");
 }
-.img-boxg2:nth-child(6){
+
+.img-boxg2:nth-child(6) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhkhiet.webp");
 }
-.img-boxg2:nth-child(7){
+
+.img-boxg2:nth-child(7) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/chikien.webp");
 }
-.img-boxg2:nth-child(8){
+
+.img-boxg2:nth-child(8) {
   background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
 }
-.img-boxg2:nth-child(9){
+
+.img-boxg2:nth-child(9) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/khanhky.webp");
 }
-.img-boxg2:nth-child(10){
+
+.img-boxg2:nth-child(10) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ailinh.webp");
 }
-.img-boxg2:nth-child(11){
+
+.img-boxg2:nth-child(11) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hienlong.webp");
 }
- 
-.img-boxg2 h3{
+
+.img-boxg2 h3 {
   color: #fff;
   position: absolute;
   bottom: 0;
   left: 30px;
   opacity: 0;
-  transition: bottom 0.5s , opacity 0.5s;
+  transition: bottom 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
 }
 
-.img-boxg2:hover{
+.img-boxg2:hover {
   width: 30vw;
   cursor: pointer;
   transition-delay: 0.1s;
 }
 
-.img-boxg2:hover h3{
+.img-boxg2:hover h3 {
   opacity: 1;
   bottom: 25px;
   cursor: pointer;
 }
 
 /* Tổ 3 */
-.img-boxg3{
+.img-boxg3 {
   width: 4.5vw;
   height: 50vh;
   margin: 10px;
@@ -521,56 +558,67 @@ font-size: 20px;
   transition: width 0.5s;
   transition-delay: 0.1s;
 }
-.img-boxg3:nth-child(2){
+
+.img-boxg3:nth-child(2) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/duymanh.webp");
 }
-.img-boxg3:nth-child(3){
+
+.img-boxg3:nth-child(3) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ducmanh.webp");
 }
-.img-boxg3:nth-child(4){
+
+.img-boxg3:nth-child(4) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vomanh.webp");
 }
-.img-boxg3:nth-child(5){
+
+.img-boxg3:nth-child(5) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quangminh.webp");
 }
-.img-boxg3:nth-child(6){
+
+.img-boxg3:nth-child(6) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vannam.webp");
 }
-.img-boxg3:nth-child(7){
+
+.img-boxg3:nth-child(7) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nguyenngoc.webp");
 }
-.img-boxg3:nth-child(8){
+
+.img-boxg3:nth-child(8) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhan.webp");
 }
-.img-boxg3:nth-child(9){
+
+.img-boxg3:nth-child(9) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/syphat.webp");
 }
-.img-boxg3:nth-child(10){
+
+.img-boxg3:nth-child(10) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ngocphu.webp");
 }
-.img-boxg3:nth-child(11){
+
+.img-boxg3:nth-child(11) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hongphuc.webp");
 }
-.img-boxg3:nth-child(12){
+
+.img-boxg3:nth-child(12) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/dinhphuoc.webp");
 }
- 
-.img-boxg3 h3{
+
+.img-boxg3 h3 {
   color: #fff;
   position: absolute;
   bottom: 0;
   left: 30px;
   opacity: 0;
-  transition: bottom 0.5s , opacity 0.5s;
+  transition: bottom 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
 }
 
-.img-boxg3:hover{
+.img-boxg3:hover {
   width: 30vw;
   cursor: pointer;
 }
 
-.img-boxg3:hover h3{
+.img-boxg3:hover h3 {
   opacity: 1;
   bottom: 25px;
   cursor: pointer;
@@ -579,7 +627,7 @@ font-size: 20px;
 
 
 /* Tổ 4 */
-.img-boxg4{
+.img-boxg4 {
   width: 4.5vw;
   height: 50vh;
   margin: 10px;
@@ -590,53 +638,63 @@ font-size: 20px;
   transition: width 0.5s;
   transition-delay: 0.1s;
 }
-.img-boxg4:nth-child(1){
+
+.img-boxg4:nth-child(1) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/tienphuoc.webp");
 }
-.img-boxg4:nth-child(2){
+
+.img-boxg4:nth-child(2) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhquan.webp");
 }
-.img-boxg4:nth-child(3){
+
+.img-boxg4:nth-child(3) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/trinhthang.webp");
 }
-.img-boxg4:nth-child(4){
+
+.img-boxg4:nth-child(4) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hoangtien.webp");
 }
-.img-boxg4:nth-child(5){
+
+.img-boxg4:nth-child(5) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/huyentrang.webp");
 }
-.img-boxg4:nth-child(6){
+
+.img-boxg4:nth-child(6) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/minhtri.webp");
 }
-.img-boxg4:nth-child(7){
+
+.img-boxg4:nth-child(7) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/phutrong.webp");
 }
-.img-boxg4:nth-child(8){
+
+.img-boxg4:nth-child(8) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ductruyen.webp");
 }
-.img-boxg4:nth-child(9){
+
+.img-boxg4:nth-child(9) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quoctruong.webp");
 }
-.img-boxg4:nth-child(10){
+
+.img-boxg4:nth-child(10) {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhtu.webp");
 }
- 
-.img-boxg4 h3{
+
+.img-boxg4 h3 {
   color: #fff;
   position: absolute;
   bottom: 0;
   left: 30px;
   opacity: 0;
-  transition: bottom 0.5s , opacity 0.5s;
+  transition: bottom 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
 }
 
-.img-boxg4:hover{
+.img-boxg4:hover {
   width: 30vw;
   cursor: pointer;
 }
 
-.img-boxg4:hover h3{
+.img-boxg4:hover h3 {
   opacity: 1;
   bottom: 25px;
   cursor: pointer;
@@ -653,4 +711,5 @@ font-size: 20px;
   background-color: #000;
   text-align: center;
 }
+
 /* __ */
