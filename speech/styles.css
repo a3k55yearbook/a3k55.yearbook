@@ -47,6 +47,10 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
 :root {
   --primary-color: #ffffff;
@@ -109,7 +113,7 @@ body {
   animation: fadeIn 1s;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: rgb(214, 83, 226);
   transition: 0.3s;
 }
 
@@ -118,7 +122,6 @@ body {
 }
 
 .nav .logo a:hover{
-  color: #6b7280;
   opacity: 0.6;
   transition: 0.3s;
 }
@@ -164,29 +167,101 @@ ul li a:hover {
 }
 
 .template_section {
-    color: #fff;
-}
-
-.template_section_message {
   min-height: 100vh;
   max-width: var(--max-width);
   margin: auto;
-  padding: 1rem;
   display: block;
-  gap: 4rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .template_section_message {
-  display: block;
+  gap: 4rem;
   justify-content: left;
+  padding: 1rem;
+}
+
+.template_section_message p {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.template_section_message h1 {
+  color: #fff;
 }
 
 .template_section_message img {
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  margin-bottom: 2%;
 }
 
+.template_section_header {
+  background-image: linear-gradient(to right, rgba(0, 0, 0) 65%, rgba(0, 0, 0, 0) 100%), url('b.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid #242424;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+  display: block;
+  justify-content: left;
+}
+
+
+.template_section_header #desc {
+  max-width: 60%;
+  padding: .5rem;
+  border-radius: 25px;
+}
+
+@media (width < 768px) {
+  .template_section_header {
+    max-width: 93%;
+    background: url('b.png');
+    background-position: 35% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: unset;
+  }
+  .template_section_header #desc {
+    max-width: 100%;
+    backdrop-filter: blur(30px);
+    padding: 1rem;
+    border-radius: 6px;
+  }
+}
+
+.template_section_header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.template_section_header #name {
+  color: #abcdef;
+  font-weight: 800;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.template_section_header #author {
+  color: #fff;
+  padding-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.template_section_header #commit {
+  color: #fff;
+}
 
 @media (width < 750px) {
   .nav .checkbox {
