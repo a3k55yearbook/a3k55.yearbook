@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A3K55 Yearbook | Members</title>
   <link rel="icon" type="image/x-icon" href="../assets/a3logo.ico">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -32,11 +32,28 @@
     </div>
   </div>
 
-  <div class="container1">
-    <div class="gallery">
-      <div class="group-name">
-        <h1>G R O U P 1</h1>
+  <div class="infoboard">
+    <button class="infoboard_close">
+      X
+    </button>
+    <div class="infoboard_box">
+      <div class="infoboard_is-mainline-dev is-mainline-dev"></div>
+      <div class="infoboard_name"></div>
+      <div class="infoboard_dob"></div>
+      <div class="infoboard_desc"></div>
+      <div class="infoboard_contacts">
+        <a id="fb"><i class="ri-xl ri-facebook-circle-fill"></i></a>
+        <a id="ig"><i class="ri-xl ri-instagram-line"></i></a>
+        <a id="gh"><i class="ri-xl ri-github-fill"></i></a>
       </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <div id="g1">
+      <span>G</span><span>R</span><span>O</span><span>U</span><span>P</span><span>1</span>
+    </div>
+    <div class="gallery">
       <div class="img-boxg1">
         <h3>Phúc Nam Anh</h3>
       </div>
@@ -53,8 +70,7 @@
         <h3>Trần Văn Dũng</h3>
       </div>
       <div class="img-boxg1">
-        <h3>Nguyễn Lê Phước Duy <span class="is-mainline-dev"> | mainline devs
-            👨‍💻👑</span></h3>
+        <h3>Nguyễn Lê Phước Duy <span class="is-mainline-dev"> | mainline devs 👨‍💻👑</span></h3>
       </div>
       <div class="img-boxg1">
         <h3>Nguyễn Hữu Anh Đức</h3>
@@ -72,6 +88,9 @@
   </div>
 
   <div class="container2">
+    <div id="g2">
+      <span>G</span><span>R</span><span>O</span><span>U</span><span>P</span><span>2</span>
+    </div>
     <div class="gallery">
       <div class="img-boxg2">
         <h3>Văn Thành Huy</h3>
@@ -106,17 +125,14 @@
       <div class="img-boxg2">
         <h3>Lê Hiển Long</h3>
       </div>
-      <div class="group-name">
-        <h1>G R O U P 2</h1>
-      </div>
     </div>
   </div>
 
   <div class="container1">
+    <div id="g3">
+      <span>G</span><span>R</span><span>O</span><span>U</span><span>P</span><span>3</span>
+    </div>
     <div class="gallery">
-      <div class="group-name">
-        <h1>G R O U P 3</h1>
-      </div>
       <div class="img-boxg3">
         <h3>Nguyễn Duy Mạnh</h3>
       </div>
@@ -156,6 +172,9 @@
   </div>
 
   <div class="container2">
+    <div id="g4">
+      <span>G</span><span>R</span><span>O</span><span>U</span><span>P</span><span>4</span>
+    </div>
     <div class="gallery">
       <div class="img-boxg4">
         <h3>Nguyễn Tiến Phước</h3>
@@ -187,18 +206,14 @@
       <div class="img-boxg4">
         <h3>Hoàng Đường Anh Tú</h3>
       </div>
-      <div class="group-name">
-        <h1>G R O U P 4</h1>
-      </div>
     </div>
   </div>
 
-  <span class="footer"></span>
-  <p class="end-footer">2024 © A3K55 - THPT CHUYEN DAI HOC VINH</p>
   <button id="toTop"></button>
 
+  <footer><p>2024 © A3K55 - THPT CHUYEN DAI HOC VINH</p></footer>
   <script src="../scripts/script_nav.js"></script>
   <script src="../scripts/script_totop.js"></script>
+  <script src="infoboard.js"></script>
 </body>
-
 </html>

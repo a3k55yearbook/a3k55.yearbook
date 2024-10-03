@@ -77,6 +77,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -117,6 +118,7 @@ a {
 
 body {
   font-family: var(--font-common);
+  background-color: #000;
 }
 
 .nav {
@@ -322,30 +324,13 @@ ul li a:hover {
   background-position: center;
   background-color: #000;
   mix-blend-mode: difference;
+  backdrop-filter: blur(25px);
   border: 2px solid #fff;
   border-color: #fff;
   border-radius: 3px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#back-to-top {
-  display: none;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  text-align: center;
-  border: 1px solid #ddd;
-  color: #f18121;
-  border-radius: 3px;
-  float: left;
-  position: fixed;
-  right: 10px;
-  bottom: 50px;
-  z-index: 900;
-  line-height: 38px;
-  font-size: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;;
+  z-index: 1050;
 }
 
 #toTop:active {
@@ -354,130 +339,242 @@ ul li a:hover {
 }
 
 /* _by Nứng_*/
+/* v2 by nhansp */
+
 .container1 {
-  width: 100%;
+  width: 100vw;
   height: 70vh;
   background: #000000;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: left;
+  padding: 1rem 2rem;
+  margin-bottom: 40vh;
 }
 
 .container2 {
-  width: 100%;
+  width: 100vw;
   height: 70vh;
   background: #000000;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: right;
+  padding: 1rem 2rem;
+  margin-bottom: 40vh;
+}
+
+@media (width < 768px) {
+  .container1, .container2 {
+    padding: 1rem 0;  
+    justify-content: center;
+    margin-bottom: 30vh;
+  }
 }
 
 .gallery {
-  display: inline-flex;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: left;
+}
+
+@media (width < 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 0.75fr);
+  }
+}
+
+#g1, #g2, #g3, #g4 {
+  height: 15vh;
+  line-height: 12.55vh;
+  padding: .5rem;
+  color: white;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#g1 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url('g1.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (width < 768px) {
+  #g1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%), url('g1.png');
+  }
+}
+
+#g3 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%), url('g3.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (width < 768px) {
+  #g3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%), url('g3.png');
+  }
+}
+
+#g1 span, #g2 span, #g3 span, #g4 span {
+  margin-right: 3%;
+}
+
+#g1, #g3 {
+  text-align: left;
+}
+
+#g2, #g4 {
+  text-align: right;
 }
 
 /* Tổ 1 */
 .img-boxg1 {
-  width: 4.5vw;
-  height: 50vh;
+  width: 15vw;
+  height: 27vh;
   margin: 10px;
   border-radius: 50px;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   transition: width 0.5s;
   transition-delay: 0.1s;
 }
 
-.img-boxg1:nth-child(2) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/namanh.webp");
-}
-
-.img-boxg1:nth-child(3) {
-  background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
-}
-
-.img-boxg1:nth-child(4) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/thaichien.webp");
-}
-
-.img-boxg1:nth-child(5) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vietchien.webp");
-}
-
-.img-boxg1:nth-child(6) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vandung.webp");
-}
-
-.img-boxg1:nth-child(7) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/phduy.webp");
-}
-
-.img-boxg1:nth-child(8) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhduc.webp");
-}
-
-.img-boxg1:nth-child(9) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhathieu.webp");
-}
-
-.img-boxg1:nth-child(10) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quanghieu.webp");
-}
-
-.img-boxg1:nth-child(11) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/xuanhung.webp");
+@media (width < 768px) {
+  .img-boxg1 {
+    width: 28vw;
+    height: 17vh;
+    border-radius: 20px;
+  }
 }
 
 .img-boxg1 h3 {
+  max-width: 90%;
   color: #fff;
   position: absolute;
   bottom: 0;
-  left: 30px;
+  left: 10%;
   opacity: 0;
   transition: bottom 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
 }
 
+@media (width < 768px) {
+  .img-boxg1 h3 {
+    font-size: 10px;
+  }
+}
+
 .img-boxg1:hover {
-  width: 30vw;
   cursor: pointer;
 }
 
 .img-boxg1:hover h3 {
   opacity: 1;
-  bottom: 25px;
+  bottom: 10%;
   cursor: pointer;
 }
 
+.img-boxg1:nth-child(1) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/namanh.webp");
+}
+
+.img-boxg1:nth-child(2) {
+  background-image: url("https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg");
+}
+
+.img-boxg1:nth-child(3) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/thaichien.webp");
+}
+
+.img-boxg1:nth-child(4) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vietchien.webp");
+}
+
+.img-boxg1:nth-child(5) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vandung.webp");
+}
+
+.img-boxg1:nth-child(6) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/phduy.webp");
+}
+
+.img-boxg1:nth-child(7) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhduc.webp");
+}
+
+.img-boxg1:nth-child(8) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhathieu.webp");
+}
+
+.img-boxg1:nth-child(9) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quanghieu.webp");
+}
+
+.img-boxg1:nth-child(10) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/xuanhung.webp");
+}
+
+/*
 .container1 .group-name {
   width: 5vh;
   color: white;
   padding-right: 3vw;
   padding-left: 1vw;
 }
-
-.container2 .group-name {
-  width: 5vh;
-  color: white;
-  padding-left: 2vw;
-  padding-right: 3vw;
-}
-
+*/
 
 /* Tổ 2 */
 .img-boxg2 {
-  width: 4.5vw;
-  height: 50vh;
+  width: 15vw;
+  height: 27vh;
   margin: 10px;
   border-radius: 50px;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   transition: width 0.5s;
   transition-delay: 0.1s;
+}
+
+@media (width < 768px) {
+  .img-boxg2 {
+    width: 28vw;
+    height: 17vh;
+    border-radius: 20px;
+  }
+}
+
+.img-boxg2 h3 {
+  max-width: 90%;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+  transition-delay: 0.1s;
+}
+
+@media (width < 768px) {
+  .img-boxg2 h3 {
+    font-size: 10px;
+  }
+}
+
+.img-boxg2:hover {
+  cursor: pointer;
+}
+
+.img-boxg2:hover h3 {
+  opacity: 1;
+  bottom: 10%;
+  cursor: pointer;
 }
 
 .img-boxg2:nth-child(1) {
@@ -524,119 +621,144 @@ ul li a:hover {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hienlong.webp");
 }
 
-.img-boxg2 h3 {
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 30px;
-  opacity: 0;
-  transition: bottom 0.5s, opacity 0.5s;
-  transition-delay: 0.1s;
-}
-
-.img-boxg2:hover {
-  width: 30vw;
-  cursor: pointer;
-  transition-delay: 0.1s;
-}
-
-.img-boxg2:hover h3 {
-  opacity: 1;
-  bottom: 25px;
-  cursor: pointer;
-}
-
 /* Tổ 3 */
 .img-boxg3 {
-  width: 4.5vw;
-  height: 50vh;
+  width: 15vw;
+  height: 27vh;
   margin: 10px;
   border-radius: 50px;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   transition: width 0.5s;
   transition-delay: 0.1s;
 }
 
-.img-boxg3:nth-child(2) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/duymanh.webp");
-}
-
-.img-boxg3:nth-child(3) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ducmanh.webp");
-}
-
-.img-boxg3:nth-child(4) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vomanh.webp");
-}
-
-.img-boxg3:nth-child(5) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quangminh.webp");
-}
-
-.img-boxg3:nth-child(6) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vannam.webp");
-}
-
-.img-boxg3:nth-child(7) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nguyenngoc.webp");
-}
-
-.img-boxg3:nth-child(8) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhan.webp");
-}
-
-.img-boxg3:nth-child(9) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/syphat.webp");
-}
-
-.img-boxg3:nth-child(10) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ngocphu.webp");
-}
-
-.img-boxg3:nth-child(11) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hongphuc.webp");
-}
-
-.img-boxg3:nth-child(12) {
-  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/dinhphuoc.webp");
+@media (width < 768px) {
+  .img-boxg3 {
+    width: 28vw;
+    height: 17vh;
+    border-radius: 20px;
+  }
 }
 
 .img-boxg3 h3 {
+  max-width: 90%;
   color: #fff;
   position: absolute;
   bottom: 0;
-  left: 30px;
+  left: 10%;
   opacity: 0;
   transition: bottom 0.5s, opacity 0.5s;
   transition-delay: 0.1s;
 }
 
+@media (width < 768px) {
+  .img-boxg3 h3 {
+    font-size: 10px;
+  }
+}
+
 .img-boxg3:hover {
-  width: 30vw;
   cursor: pointer;
 }
 
 .img-boxg3:hover h3 {
   opacity: 1;
-  bottom: 25px;
+  bottom: 10%;
   cursor: pointer;
 }
 
+.img-boxg3:nth-child(1) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/duymanh.webp");
+}
 
+.img-boxg3:nth-child(2) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ducmanh.webp");
+}
+
+.img-boxg3:nth-child(3) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vomanh.webp");
+}
+
+.img-boxg3:nth-child(4) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/quangminh.webp");
+}
+
+.img-boxg3:nth-child(5) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/vannam.webp");
+}
+
+.img-boxg3:nth-child(6) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nguyenngoc.webp");
+}
+
+.img-boxg3:nth-child(7) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/nhan.webp");
+}
+
+.img-boxg3:nth-child(8) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/syphat.webp");
+}
+
+.img-boxg3:nth-child(9) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/ngocphu.webp");
+}
+
+.img-boxg3:nth-child(10) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/hongphuc.webp");
+}
+
+.img-boxg3:nth-child(11) {
+  background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/dinhphuoc.webp");
+}
 
 /* Tổ 4 */
 .img-boxg4 {
-  width: 4.5vw;
-  height: 50vh;
+  width: 15vw;
+  height: 27vh;
   margin: 10px;
   border-radius: 50px;
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   transition: width 0.5s;
   transition-delay: 0.1s;
+}
+
+@media (width < 768px) {
+  .img-boxg4 {
+    width: 28vw;
+    height: 17vh;
+    border-radius: 20px;
+  }
+}
+
+.img-boxg4 h3 {
+  max-width: 90%;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+  transition-delay: 0.1s;
+}
+
+@media (width < 768px) {
+  .img-boxg4 h3 {
+    font-size: 10px;
+  }
+}
+
+.img-boxg4:hover {
+  cursor: pointer;
+}
+
+.img-boxg4:hover h3 {
+  opacity: 1;
+  bottom: 10%;
+  cursor: pointer;
 }
 
 .img-boxg4:nth-child(1) {
@@ -679,27 +801,6 @@ ul li a:hover {
   background-image: url("https://raw.githubusercontent.com/a3k55yearbook/src_compressed/main/member_thumbnails_webp/anhtu.webp");
 }
 
-.img-boxg4 h3 {
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 30px;
-  opacity: 0;
-  transition: bottom 0.5s, opacity 0.5s;
-  transition-delay: 0.1s;
-}
-
-.img-boxg4:hover {
-  width: 30vw;
-  cursor: pointer;
-}
-
-.img-boxg4:hover h3 {
-  opacity: 1;
-  bottom: 25px;
-  cursor: pointer;
-}
-
 .footer {
   background-color: #000;
   text-align: center;
@@ -713,3 +814,62 @@ ul li a:hover {
 }
 
 /* __ */
+
+.infoboard {
+  opacity: 0;
+  display: block;
+  position: fixed;
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10% 0;
+  border: 3px solid #555555;
+  width: 70%;
+  height: 80%;
+  z-index: -1;
+  padding: 1rem;
+  margin: 2% 0 0 15%;
+  box-sizing: border-box;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+@media (width < 768px) {
+  .infoboard {
+    margin: 5% 0 0 2%;
+    width: 95%;
+  }
+}
+
+.infoboard_close {
+  color: white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 2%;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(7px), brightness(0.2);
+}
+
+.infoboard_box {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: #fff;
+  backdrop-filter: blur(2px);
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.infoboard_name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.infoboard_contacts {
+  margin-top: 5%;
+}

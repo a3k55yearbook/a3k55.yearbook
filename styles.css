@@ -374,8 +374,6 @@ ul li a:hover {
   opacity: 1;
 }
 
-@media screen and (max-width: 678px) {}
-
 
 #toTop {
   position: fixed;
@@ -459,6 +457,12 @@ ul li a:hover {
   filter: brightness(100%);
   height: 100%;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 55%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media (width < 768px) {
+  #container img {
+    object-position: 50% 25%;
+  }
 }
 
 #container #content {
