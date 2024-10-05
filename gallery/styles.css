@@ -90,6 +90,7 @@ a {
 }
 
 body {
+  min-height: 100vh;
   font-family: var(--font-common);
   background-color: #000;
 }
@@ -281,7 +282,8 @@ ul li a:hover {
 }
 
 .timeline {
-  border: 5px solid red;
+  padding: 1rem;
   max-width: var(--max-width);
+  min-height: 88vh;
   margin: auto;
 }
