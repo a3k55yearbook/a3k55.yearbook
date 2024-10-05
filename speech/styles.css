@@ -407,10 +407,7 @@ ul li a:hover {
 }
 
 .footer {
-  position: absolute;
-  bottom: 1%;
-  left: 0;
-  right: 0;
+  position: static;
   background-color: #000;
   text-align: center;
 }
